@@ -4,7 +4,7 @@ WORKDIR /tmp
 
 RUN apt-get -y update
 RUN apt-get -y install curl build-essential libpcre3 libpcre3-dev zlib1g-dev libssl-dev git && \
-    curl -Lo nginx.tgz http://nginx.org/download/nginx-1.13.12.tar.gz && \
+    curl -Lo nginx.tgz http://nginx.org/download/nginx-1.15.3.tar.gz && \
     rm -rf nginx && \
     mkdir nginx && \
     tar -zxC nginx --strip-components 1 -f nginx.tgz && \
